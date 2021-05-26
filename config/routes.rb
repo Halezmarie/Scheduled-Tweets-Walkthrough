@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
+  delete "logout", to: "sessions#destroy"
 
   root to: "main#index"
  #root is special b/c it is a custom helper it can be in an empty string 
