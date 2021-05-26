@@ -1,7 +1,28 @@
 class MainController < ApplicationController
     def index
-        #the flash message gets stored in the flash hash object
-        flash[:notice] = "Logged in successfully"
-        flash[:alert] = "Invalid email or password"
     end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # ex: flash messages
+        # the flash message gets stored in the flash hash object
+        # flash.now[:notice] = "Logged in successfully"
+        # flash.now[:alert] = "Invalid email or password"
+        # # .now only shows it on the current request
