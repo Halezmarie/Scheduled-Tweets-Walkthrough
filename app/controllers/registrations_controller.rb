@@ -9,6 +9,8 @@ class RegistrationsController < ApplicationController
        # take that hash of params and give it to user.new
        if @user.save 
         # if it is successful then redirect
+        session[:user_id] = @user.id
+        # sign in the user into their session
         redirect_to root_path, notice: "Successfully created account"
        else
         render :new
